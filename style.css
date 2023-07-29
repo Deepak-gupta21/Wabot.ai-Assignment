@@ -8,6 +8,15 @@ body {
   font-family: Arial, sans-serif;
   font-family: Arial, sans-serif;
 }
+
+.logo_img {
+  position: absolute;
+  top: 2rem;
+  left: 6rem;
+  width: 10%;
+  height: auto;
+}
+
 .main {
   display: flex;
   flex-direction: column;
