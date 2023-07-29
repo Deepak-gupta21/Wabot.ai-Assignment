@@ -3,6 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100vw;
   margin: 0;
   font-family: Arial, sans-serif;
   font-family: Arial, sans-serif;
@@ -10,19 +11,26 @@ body {
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 .container {
-  width: 70%;
-  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  max-width: 265px;
   background-color: white;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 60px;
-  padding-top: 15px;
+  padding: 1.5rem 3rem;
   border-radius: 2%;
+  margin-bottom: 12px;
 }
 .intro {
-  width: 65%;
-  padding-left: 45px;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,20 +54,20 @@ body {
   flex-direction: column;
   font-family: Arial, sans-serif;
   font-family: Arial, sans-serif;
+  gap: 1rem;
 }
 .input_section label {
   display: block;
-  margin-bottom: 5px;
   color: #5f5d5d;
   font-size: 11px;
   font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .input_section input,
 .input_section select {
   width: 100%;
   padding: 8px;
-  margin-bottom: 15px;
   border: 1px solid #dbd8d8;
   border-radius: 5px;
   font-size: 11px;
@@ -68,7 +76,6 @@ body {
 .span_container {
   display: flex;
   gap: 18px;
-  margin-top: -17px;
 }
 span {
   background-color: rgba(230, 223, 223, 0.479);
@@ -76,15 +83,16 @@ span {
   font-size: 11px;
   cursor: pointer;
 }
-.interaction {
-  margin-top: -17px;
-}
+
 .locations {
   color: #5f5d5d;
 }
 
+.locations > h6 {
+  margin: 0;
+  margin-bottom: 12px;
+}
 .button {
-  margin-top: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,7 +102,6 @@ span {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 43px;
   height: 30px;
   background-color: rgb(48, 113, 197);
   color: white;
@@ -106,7 +113,6 @@ span {
   transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 .footer {
-  margin-top: 20px;
   text-align: center;
   color: #948e8e;
   font-size: 11px;
@@ -127,16 +133,12 @@ span {
   background-color: #3e8e41;
 }
 
-/* Media query for screens with a maximum width of 768px */
-@media (max-width: 768px) {
+/* Media query for screens with a maximum width of 400px */
+@media (max-width: 400px) {
   body {
     font-size: 14px;
   }
-}
-
-/* Media query for screens with a minimum width of 1200px */
-@media (min-width: 1200px) {
-  body {
-    font-size: 18px;
+  .container {
+    padding: 0.5rem;
   }
 }
